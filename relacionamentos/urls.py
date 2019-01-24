@@ -5,4 +5,5 @@ urlpatterns = [
     path ('', views.home),
     path ('usuario/', views.usuario_list),
     path ('usuario/<int:usuario_id>/', views.usuario_show),
+
 ]                                             
