@@ -1,0 +1,41 @@
+{% extends "base.html" %} {% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h1>Listagem dos Usuarios</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th> NOME </th>
+                    <th> IDADE </th>
+                    <th> SEXO </th>
+                    <th> CIDADE </th>
+                    <th> SIGNO </th>
+                    <th> GOSTO_MUSICAL </th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for usuario in usuarios %}
+                <tr>
+                    <td>{{usuario.nome}}</td>
+                    <td>{{usuario.idade}}</td>
+                    <td>{{usuario.sexo}}</td>
+                    <td>{{usuario.cidade}}</td>
+                    <td>{{usuario.signo}}</td>
+                    <td>{{usuario.gosto_musical}}</td>
+                    <td>
+                        <a href="/relacionamentos/usuario/{{usuario.id}}/">Ver</a>
+                    </td>
+                    <td></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" style="text-align: right;">
+                        <p>Foram encontrados {{usuarios | length}} usuarios cadastrados</p>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>

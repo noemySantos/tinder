@@ -1,0 +1,32 @@
+{% extends "base.html" %} {% block content %}
+<h1>Detalhes do usuario</h1>
+<div>
+    <label>Nome:</label>
+    {{usuario.nome}}
+</div>
+
+<div>
+    <label>Idade:</label>
+    {{usuario.idade}}
+</div>
+
+<div>
+    <label>Sexo:</label>
+    {{usuario.sexo}}
+</div>
+
+<div>
+    <label>Cidade:</label>
+    {{usuario.cidade}}
+</div>
+
+<div>
+    <label>Signo:</label>
+    {{usuario.signo}}
+</div>
+
+<div>
+    <label>Gosto Musical:</label>
+    {{usuario.gosto_musical}}
+</div>
+{% endblock %}

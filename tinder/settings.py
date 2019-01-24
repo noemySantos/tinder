@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'encontros.apps.EncontrosConfig',
+    'relacionamentos',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
